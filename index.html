@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style/main.scss" />
+    <title>Todo app</title>
+  </head>
+  <body>
+    <main>
+      <div class="linear-bg"></div>
+      <article class="todo">
+        <header class="todo__heading">
+          <h1>todo</h1>
+          <img
+            src="./images/icon-moon.svg"
+            class="img__toggle--dark"
+            alt="moon icon"
+          />
+        </header>
+        <section class="todo__write">
+          <span class="todo__checkbox-main"
+            ><img
+              class="todo__checkbox-image"
+              src="/images/icon-check.svg"
+              alt="todo checkbox icon"
+          /></span>
+          <input
+            type="text"
+            class="todo__input"
+            id="write-todo"
+            placeholder="Create a new todo.."
+          />
+        </section>
+        <section class="todo__content">
+          <ul class="todo__box"></ul>
+          <div class="todo__status">
+            <span class="todo__count">5 items left</span>
+            <div class="state">
+              <span data-name="all" class="state__item active">All</span>
+              <span data-name="active" class="state__item">Active</span>
+              <span data-name="complete" class="state__item">Completed</span>
+            </div>
+            <span class="clear">Clear Completed</span>
+          </div>
+        </section>
+        <span class="drag-span">Drag and drop to reorder list</span>
+      </article>
+    </main>
+    <script src="scripts/main.js" type="module"></script>
+  </body>
+</html>
